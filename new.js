@@ -1,12 +1,12 @@
 // SELECTORS
 
 const todoInput = document.querySelector(".new-task-input");
-const todoSubmit = document.querySelector("submitButton");
+const todoSubmit = document.querySelector(".submitButton");
 const todoList = document.querySelector(".task-list");
 
 // Event listeners
 
-submitButton.addEventListener('click', addNewTask);
+todoSubmit.addEventListener('click', addNewTask);
 
 // Functions
 
@@ -24,17 +24,17 @@ function addNewTask(event){
     todoDiv.appendChild(newTodo);
     // check mark button
     const completedButton = document.createElement('button');
-    completedButton.innerText = '<i class="fa fa-check"></i>';
+    completedButton.innerHTML = '<i class="fa fa-check"></i>';
     completedButton.classList.add("complete-btn");
     todoDiv.appendChild(completedButton);
     // check edit button
     const editButton = document.createElement('button');
-    editButton.innerText = '<i class="fa fa-pen"></i></i>';
+    editButton.innerHTML = '<i class="fa fa-pen"></i>';
     editButton.classList.add("edit-btn");
     todoDiv.appendChild(editButton);
     // check trash button
     const trashButton = document.createElement('button');
-    trashButton.innerText = '<i class="fa fa-xmark"></i>';
+    trashButton.innerHTML = '<i class="fa fa-xmark"></i>';
     trashButton.classList.add("trash-btn");
     todoDiv.appendChild(trashButton);
     // append to list 
