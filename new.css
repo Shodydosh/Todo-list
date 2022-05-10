@@ -1,0 +1,167 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 20px;
+  background-image: linear-gradient(60deg, rgb(23, 21, 61), #401969);
+  background
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.card {
+  position: relative;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  width: 250px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: rgb(59, 54, 155);
+}
+
+.card::before{
+  width: 260px;
+  height: 310px;
+  border-radius: 20px;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-5px, -5px);
+  background: linear-gradient(60deg,
+    #5ff281, #5f86f2, #a65ff2,
+    #f25fd0, #f25f61, #f2cb5f) 0 50%;;
+  background-size: 300% 300%;
+  animation: gradient-animation 4s alternate infinite;
+  z-index: -1;
+}
+@keyframes gradient-animation {
+  50%{
+    background-position: 100% 50%;
+  }
+}
+
+button.submitButton {
+  margin: 5px 5px;
+  display: inline-block;
+  color:  white;
+  text-decoration: none;
+  height: 30px;
+  width: 75px;
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.submitButton:hover{
+  opacity: 0.9;
+  animation: pulsate 1s
+  ease-in-out;
+}
+
+.submitButton:active {
+  opacity: 0.6;
+}
+
+@keyframes pulsate {
+  0%{
+    box-shadow: 
+    0 0 20px white,
+    0 0 50px rgb(80, 119, 152);
+  }
+}
+
+#new-task-form {
+  margin: 10px 10px;
+  display: flex;
+}
+
+input, button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+input.new-task-input {
+  flex: 1 1 0%;
+  background-color: rgb(173, 173, 173);
+  border: 1px solid white;
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 7px;
+  margin: 5px 5px;
+  padding-left: 5px;
+}
+
+.new-task-input::placeholder{
+  color: black;
+  opacity: 0.3;
+}
+
+h1{
+  padding-top: 10px;
+}
+
+h2{
+  padding-left: 10px;
+  text-align: left;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  width: 230px;
+  height: 30px;
+  background-color: #5f86f2;
+  border-radius: 5px;
+  margin: 5px 10px;
+}
+
+.action {
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+
+input.text {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  padding: 10px 10px;
+  justify-content: space-between;
+  font-size: 10px;
+}
+
+.tick, .edit, .delete {
+  padding: 10px 3px;
+  cursor: pointer;
+}
+
+.edit {
+  font-size: 9px;
+}
+
+.delete {
+  padding-right: 10px;
+}
+
+.tick:hover, .edit:hover, .delete:hover{
+  color: white;
+  opacity: 0.8;
+}
+
+.tick:active, .edit:active, .delete:active{
+  color: white;
+  opacity: 0.6;
+}
