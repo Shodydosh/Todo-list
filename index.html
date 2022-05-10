@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/9c77a686f9.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wg    ht@900&display=swap" rel="stylesheet">
+    <title>Todo aisjdioa</title>
+</head>
+<body>
+    <div class="card">
+        <header>
+            <h1>Todo List</h1>
+            <form id="new-task-form">
+                <input 
+                    type="text"
+                    class="new-task-input"
+                    placeholder="what do you have planned recently?" 
+                />
+                <button class="submitButton">
+                    Add task
+                </button>   
+    
+            </form>
+        </header>
+    
+        <main>
+    
+            <div class="todo-container">
+                <h2>Tasks</h2>
+                <ul class="task-list">
+                    <div class="todo">
+                        <li>hey</li>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </ul>
+    
+                <div class="task">
+                    <div class="content1">
+                        <input 
+                            type="text"
+                            class="text"
+                            value="1234"
+                            readonly
+                        />
+                    </div>
+                    <div class="action">
+                        <button class="tick">
+                            <i onclick="strikeIt()" class="fa fa-check"></i>
+                        </button>
+                        <button class="edit">
+                            <i class="fa fa-pen"></i>
+                        </button>
+                        <button class="delete">
+                            <i class="fa fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+    
+        </main>
+    </div>
+   
+
+    <script src="new.js"></script>
+</body>
+</html>
