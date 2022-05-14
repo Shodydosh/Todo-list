@@ -127,13 +127,28 @@ h2{
   margin: 5px 10px;
 }
 
+.todo {
+  display: flex;
+  justify-content: space-between;
+  width: 230px;
+  height: 30px;
+  background-color: #5f86f2;
+  border-radius: 5px;
+  margin: 5px 10px;
+}
+
+.button {
+  display: flex;
+  justify-content: left;
+}
+
 .action {
   display: flex;
   text-align: left;
   align-items: center;
 }
 
-input.text {
+div.todo-item {
   display: flex;
   text-align: left;
   align-items: center;
@@ -142,25 +157,30 @@ input.text {
   font-size: 10px;
 }
 
-.tick, .edit, .delete {
-  padding: 10px 3px;
+.complete-btn, .edit-btn{
+  padding: 8px 3px;
   cursor: pointer;
 }
 
-.edit {
-  font-size: 9px;
+.delete-btn {
+  margin: 10px 10px 8px 3px;
 }
 
-.delete {
-  padding-right: 10px;
+.edit-btn {
+  font-size: 10px;
 }
 
-.tick:hover, .edit:hover, .delete:hover{
+.delete-btn {
+  font-size: 15px;
+  /* padding-right: 10px; */
+}
+
+.complete-btn:hover, .edit-btn:hover, .delete-btn:hover{
   color: white;
   opacity: 0.8;
 }
 
-.tick:active, .edit:active, .delete:active{
+.complete-btn:active, .edit-btn:active, .delete-btn:active{
   color: white;
   opacity: 0.6;
 }
