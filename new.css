@@ -21,14 +21,14 @@ body {
   align-items: center;
   margin: auto;
   width: 250px;
-  height: 300px;
+  min-height: 300px;
   border-radius: 20px;
   background-color: rgb(59, 54, 155);
 }
 
 .card::before{
   width: 260px;
-  height: 310px;
+  height: 102%;
   border-radius: 20px;
   content: '';
   position: absolute;
