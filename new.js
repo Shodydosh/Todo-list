@@ -18,25 +18,31 @@ function addNewTask(event){
     todoDiv.classList.add("todo");
     
     // create LI
-    const newTodo = document.createElement("li");
-    newTodo.innerText = 'hey';
+    const newTodo = document.createElement("div");
+    newTodo.innerText = 'hi';
     newTodo.classList.add('todo-item');
     todoDiv.appendChild(newTodo);
+
+    const buttons = document.createElement("div");
+    buttons.classList.add("interactButtons");
+
     // check mark button
     const completedButton = document.createElement('button');
     completedButton.innerHTML = '<i class="fa fa-check"></i>';
     completedButton.classList.add("complete-btn");
-    todoDiv.appendChild(completedButton);
+    buttons.appendChild(completedButton);
     // check edit button
     const editButton = document.createElement('button');
     editButton.innerHTML = '<i class="fa fa-pen"></i>';
     editButton.classList.add("edit-btn");
-    todoDiv.appendChild(editButton);
+    buttons.appendChild(editButton);
     // check trash button
     const trashButton = document.createElement('button');
     trashButton.innerHTML = '<i class="fa fa-xmark"></i>';
-    trashButton.classList.add("trash-btn");
-    todoDiv.appendChild(trashButton);
+    trashButton.classList.add("delete-btn");
+    buttons.appendChild(trashButton);
+
+    todoDiv.appendChild(buttons);
     // append to list 
     todoList.appendChild(todoDiv);
 }
