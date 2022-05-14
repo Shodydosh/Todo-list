@@ -19,7 +19,7 @@ function addNewTask(event){
     
     // create LI
     const newTodo = document.createElement("div");
-    newTodo.innerText = 'hi';
+    newTodo.innerText = todoInput.value;
     newTodo.classList.add('todo-item');
     todoDiv.appendChild(newTodo);
 
