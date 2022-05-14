@@ -148,6 +148,12 @@ h2{
   align-items: center;
 }
 
+.interactButtons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 div.todo-item {
   display: flex;
   text-align: left;
@@ -163,7 +169,7 @@ div.todo-item {
 }
 
 .delete-btn {
-  margin: 10px 10px 8px 3px;
+  margin: 7px 10px 8px 3px;
 }
 
 .edit-btn {
